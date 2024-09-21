@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
-    <script type="module" crossorigin src="{% static 'assets/index-D4a4Ib-D.js' %}"></script>
-    <link rel="stylesheet" type="text/css" crossorigin href="{% static 'assets/index-Duadp2Px.css' %}">
+    
+    {% load static %}
+    <link rel="stylesheet" type="text/css" crossorigin href="{% static 'index-Duadp2Px.css' %}">
+    <script type="module" crossorigin src="{% static 'index-D4a4Ib-D.js' %}"></script>
   </head>
   <body>
     <div id="root"></div>
