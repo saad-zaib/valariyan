@@ -32,7 +32,7 @@ ALLOWED_HOSTS = ['valariyan.com','valariyan-production.up.railway.app']
 CORS_ALLOWED_ORIGINS = [
     'https://*.railway.app', 
      "https://valariyan.com",
-    "https://valariyan-production.up.railway.app/"
+    "https://valariyan-production.up.railway.app"
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
