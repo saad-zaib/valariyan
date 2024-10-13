@@ -3,6 +3,6 @@ from .views import ContactMessageView,ContactMessageView2,IndexView  # Adjust ac
 
 urlpatterns = [
     path('', ContactMessageView.as_view(), name='contact_message'),
-    path('/2', ContactMessageView2.as_view(), name='contact_message2'),
+    path('2', ContactMessageView2.as_view(), name='contact_message2'),
     # Add more paths as needed
 ]
