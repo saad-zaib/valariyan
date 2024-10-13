@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-hvtvgw3e+)9fglcerx*$p6y^zj!zo!+n#ap_h7*#7*zp10(r7%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1','testing-estate.up.railway.app']
 
@@ -51,8 +51,8 @@ INSTALLED_APPS = [
     'corsheaders',
     'contact',
     'factcard',
-    'review'
-    
+    'review',
+    'projet'
 ]
 
 MIDDLEWARE = [
@@ -145,20 +145,18 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # My API SETTINGS
 
 # Email settings
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'  # Or your email provider's SMTP server
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'your_email@gmail.com'
-EMAIL_HOST_PASSWORD = 'your_email_password'
-DEFAULT_FROM_EMAIL = 'your_email@gmail.com'
-ADMIN_EMAIL = 'your_email@gmail.com'
+# settings.py
 
-# Twilio settings (for SMS)
-TWILIO_ACCOUNT_SID = 'your_twilio_account_sid'
-TWILIO_AUTH_TOKEN = 'your_twilio_auth_token'
-TWILIO_PHONE_NUMBER = 'your_twilio_phone_number'
-ADMIN_PHONE_NUMBER = 'your_phone_number'
+# Email settings
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = "copyhaitu420@gmail.com"  # Your Gmail address
+EMAIL_HOST_PASSWORD = "onvc kuhm tlgp ktgf"  # Your Gmail app password
+EMAIL_USE_TLS = True
+
+# Set ADMIN_EMAIL to the same value as EMAIL_HOST_USER
+ADMIN_EMAIL = EMAIL_HOST_USER  # This will use the same email as the host user
 
 
 
