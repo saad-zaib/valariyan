@@ -27,11 +27,12 @@ SECRET_KEY = 'django-insecure-hvtvgw3e+)9fglcerx*$p6y^zj!zo!+n#ap_h7*#7*zp10(r7%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['valariyan.com']
+ALLOWED_HOSTS = ['valariyan.com','valariyan-production.up.railway.app']
 
 CORS_ALLOWED_ORIGINS = [
     'https://*.railway.app', 
      "https://valariyan.com",
+    "https://valariyan-production.up.railway.app/"
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
